@@ -12,18 +12,19 @@
     <div class="todo">
         <h2>To-Do List <img src ="https://assets.dryicons.com/uploads/icon/svg/6150/c40a9e1f-308b-48f1-b49e-14ef0e05af70.svg"></h2>
         <br />
-       
-        <div class="row">
-            <input type="text" id="input-box" placeholder="Add your to-do items here">
-            <button onclick="addTask()">Add</button>
-        </div>
-        <ul id="listContainer">
-            <!-- <li class="checked"></li>
-             <li>Task 2</li>
-            <li>Task 3</li> !--> 
-        </ul>
+
+        <form id="todoForm">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your to-do items here" required minlength="3">
+                <button id="addButton" type="submit">Add</button>
+            </div>
+        </form>
+
+        <ul id="listContainer"></ul>
+
+        <button id="removeTaskButton">Remove Task</button>
+        <button id="iterateTasksButton">Iterate Over Tasks</button>
     </div>
-</div>
-        
+</div>   
 </body>
 </html>
